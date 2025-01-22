@@ -3,7 +3,55 @@
 @{
     // Razor-sida
     ViewData["Title"] = "Razor";
+
+    // Kurs-lista 
+    List<string> courses = new List<string>
+        {
+            "DT084G - Introduktion till programmering i JavaScript",
+            "DT057G - Webbutveckling I", 
+            "DT200G - Grafisk teknik för webb",
+            "DT086G - Webbanvändbarhet",
+            "DT211G - Frontend-baserad webbutveckling",
+            "DT003G - Databaser",
+            "DT208G - Programmering i TypeScript",
+            "DT207G - Backend-baserad webbutveckling",
+            "IK060G - Projektledning",
+            "DT071G - Programmering i C#.NET",
+            "DT209G - Webbutveckling för WordPress",
+            "DT193G - Fullstack-utveckling med ramverk",
+            "DT210G - Fördjupad frontend-utveckling",
+            "DT191G - Webbutveckling med .NET"
+        };
+
+
+    // Datum och klockslag 
+    var today = DateTime.Now; // Hämta aktuellt datum och tid
+    bool isFriday = today.DayOfWeek == DayOfWeek.Friday; // Kontrollera om det är fredag
 }
 
-<h1>Om den här sidan.</h1>
-<p>Detta är Razor-sidan</p>
+<h2 class="mb-4">Razor</h2>
+<section>
+    <!-- Information med Datum och tid -->
+     <h3 class="mb-3">Information</h3>
+    <p><strong>Datum/klockslag:</strong> @today.ToString("yyyy-MM-dd HH:mm:ss")</p>
+    <!-- Kontrollera Om det är fredag och skriv ut text baserat på resultat -->
+            @if(isFriday) {
+                <p class="text-success">Idag är det fredag!</p>
+            } else {
+                <p class="text-danger">Idag är det inte fredag!</p>
+            }
+</section>
+
+<section>
+    <!-- Kurs-lista -->
+    <h3 class="mb-3">Kurser jag läst</h3>
+    <ul>
+        <!-- Loopa igenom Kurser och skriv ut -->
+    @foreach (string course in courses) {
+        <li>@course</li>
+    }
+    </ul>
+
+</section>
+   
+

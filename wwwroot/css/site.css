@@ -1,31 +1,72 @@
-html {
-  font-size: 14px;
+/* Header */
+header {
+  background-color:#2F4157;
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+header .logo {
+  padding: 15px 20px;
+  margin-top: 0.5em;
+  border: 1px solid;
+  border-radius: 8px;
+  color: #fff;
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+header a {
+  color: #fff;
+  text-decoration: none;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+/* Datum */
+header .date {
+  border: 1px solid;
+  border-radius: 8px;
+  padding: 5px 10px;
+  height: 40px;
+  color: #fff;
 }
 
-body {
-  margin-bottom: 60px;
+/* sidomeny */
+.sidebar-menu {
+  padding: 0 1.2rem 0 0;
 }
 
-.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
-  color: var(--bs-secondary-color);
-  text-align: end;
+nav ul.list-group {
+  border: 1px solid #2F4157;
+  padding: 8px;
+  background-color: #577C8E;
+  height: 100%;
 }
 
-.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
-  text-align: start;
+.list-group-item {
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.list-group-item:hover {
+  background-color: #C8D8E4;
+  font-weight: bold;
+}
+
+/* Huvudinnehåll */
+main {
+  border: 1px solid #7a7a7a;
+  border-radius: 8px;
+  padding: 1.8rem !important;
+  background-color: #fff;
+}
+
+.content {
+  min-height: 75vh;
+}
+
+/* Footer */
+footer {
+  border: 1px solid #7a7a7a;
+  padding: 1.2rem;
+  background-color:#C8D8E4;
+  text-align: center;
+  width: 100%;
+  margin: 2rem auto;
+  box-sizing: border-box;
 }
