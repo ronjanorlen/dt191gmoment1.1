@@ -1,0 +1,6 @@
+bin/
+obj/
+**/wwwroot/lib/
+Properties/launchSettings.json
+_ValidationScriptsPartial.cshtml
+.vscode/settings.json
