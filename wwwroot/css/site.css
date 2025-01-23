@@ -28,6 +28,7 @@ header .date {
 /* sidomeny */
 .sidebar-menu {
   padding: 0 1.2rem 0 0;
+  box-sizing: border-box;
 }
 
 nav ul.list-group {
@@ -54,10 +55,18 @@ main {
   border-radius: 8px;
   padding: 1.8rem !important;
   background-color: #fff;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .content {
   min-height: 75vh;
+}
+
+/* Citat */
+#song-display {
+  margin-top: 1rem;
+  font-style: italic;
 }
 
 /* Footer */
@@ -70,3 +79,32 @@ footer {
   margin: 2rem auto;
   box-sizing: border-box;
 }
+
+/* Media queries - små skärmar */
+
+@media (max-width: 768px) {
+  main {
+    padding: 2em auto 0 auto !important;
+  }
+
+  .sidebar-menu {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 1em;
+  }
+
+  .content {
+    padding: 15px;
+  }
+
+  .date {
+    text-align: center;
+    font-size: 0.8em;
+  }
+
+  footer {
+    margin: 0 auto;
+  }
+}
+
+
