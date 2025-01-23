@@ -1,6 +1,8 @@
 ﻿"use strict";
 
-// Visa slumpade låtar
+let currentSong = 0;
+
+// Visa låtar
 function showSong() {
     const songs = [
         "Sara Parkman - Vreden",
@@ -13,6 +15,8 @@ function showSong() {
         "Too Sweet - Hozier",
         "Supermassive Black Hole - Muse"
     ];
-    const randomSong = songs[Math.floor(Math.random() * songs.length)];
-    document.getElementById("song-display").innerText = randomSong;
+
+    // Visa låtar i turordning och börja om när sista visats
+    document.getElementById("song-display").innerText = songs[currentSong];
+    currentSong = (currentSong + 1) % songs.length;
 }
