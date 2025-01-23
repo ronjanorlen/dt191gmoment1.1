@@ -84,7 +84,7 @@ footer {
 
 @media (max-width: 768px) {
   main {
-    padding: 2em auto 0 auto !important;
+    padding: 1.2em !important;
   }
 
   .sidebar-menu {

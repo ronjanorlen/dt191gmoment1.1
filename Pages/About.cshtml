@@ -2,7 +2,7 @@
 @model MyApp.Namespace.AboutModel
 @{
     // Om-sida
-    ViewData["Title"] = "Om sidan"; // Titel på sidan
+    ViewData["Title"] = "Om"; // Titel på sidan
 }
 <article>
     <h2 class="mb-4">Om sidan</h2>
@@ -10,10 +10,12 @@
         Jag heter Ronja Norlén, är 31 år och bor i Åre. Mina främsta intressen är att åka skidor, cykla downhill,
         springa på fjället samt umgås med mina nära och kära. <br>
         Just nu går jag mitt andra (och sista) år på Webbutvecklingsprogrammet på Mittuniversitetet och tar examen
-        i juni 2025. I mars 2025 ska vi gå ut på praktik och få testa på arbetslivet under 10 veckor, detta 
+        i juni 2025. I mars 2025 ska vi gå ut på praktik och få testa på arbetslivet under 10 veckor, detta
         ser jag framemot jättemycket!<br><br>
-        När jag pluggar, cyklar, åker skidor eller är ute och springer tycker jag om att lyssna på musik för att komma igång.
-        Om du vill ha lite tips på låtar att lägga in i din egna spellista så är det bara att klicka på knappen nedan.</p>
+        När jag pluggar, cyklar, åker skidor eller är ute och springer tycker jag om att lyssna på musik för att komma
+        igång.
+        Om du vill ha lite tips på låtar att lägga in i din egna spellista så är det bara att klicka på knappen nedan.
+    </p>
     <!-- Knapp för att slumpa fram låtar -->
     <button id="song-btn" class="btn btn-primary" onclick="showSong()">Jag vill ha låt-tips!</button>
     <p id="song-display"></p>
