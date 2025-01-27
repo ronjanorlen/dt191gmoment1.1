@@ -10,4 +10,3 @@ Uppgiften går ut på att skapa en enklare webbplats med ASP.net Core och använ
 **Kurs:** Webbutveckling med .NET  
 **Program:** Webbutveckling  
 **Skola:** Mittuniversitetet  
-**Termin, År:** HT, 2024
